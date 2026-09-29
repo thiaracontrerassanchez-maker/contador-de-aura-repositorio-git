@@ -1,0 +1,1 @@
+# Detección de movimiento con OpenCV

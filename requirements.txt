@@ -1,0 +1,20 @@
+opencv-python>=4.8
+# Nota: MediaPipe cambió su forma de usarse a mediados de 2024 (pasó de la
+# API simple "mp.solutions.pose" a la API nueva "MediaPipe Tasks", que usa
+# un archivo de modelo .task). src/pose_detector.py ya está adaptado a esta
+# API nueva y descarga automáticamente ese archivo la primera vez que se
+# ejecuta el programa (requiere conexión a internet esa primera vez).
+mediapipe>=0.10.30
+# Nota: se usa "pygame-ce" (Pygame Community Edition) en vez de "pygame".
+# Es un fork mantenido por los mismos desarrolladores, 100% compatible: en
+# el código se sigue escribiendo "import pygame" sin cambios. Se eligió
+# porque tiene instaladores (wheels) listos para las versiones más nuevas
+# de Python en Windows; "pygame" clásico todavía no los tiene para todas,
+# lo que hacía que pip intentara compilarlo desde cero y fallara si no se
+# tenían instaladas las herramientas de compilación de Visual Studio.
+# IMPORTANTE: no instalar "pygame" y "pygame-ce" a la vez (chocan, porque
+# los dos usan el nombre "pygame"). Si ya tenías "pygame" instalado:
+#   pip uninstall pygame
+pygame-ce>=2.5
+numpy>=1.24
+Pillow>=10.0

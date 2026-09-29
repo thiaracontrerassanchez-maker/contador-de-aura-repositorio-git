@@ -1,0 +1,1 @@
+#Detección de poses/movimientos especiales con MediaPipe
