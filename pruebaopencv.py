@@ -4,7 +4,7 @@ import cv2
 print("Versión de OpenCV:", cv2.__version__)
 
 # Crea una imagen negra de prueba (300x300 píxeles)
-import numpy as np
+import prueba_numpy as np
 imagen = np.zeros([300, 300, 3], dtype=np.uint8)
 
 # Dibuja un texto en la imagen

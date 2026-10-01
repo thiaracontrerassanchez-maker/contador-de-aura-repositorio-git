@@ -1,7 +1,7 @@
 #configuracion del programa, como calibracion de la camara, etc.
 
 import cv2 as cv
-import numpy as np 
+import prueba_numpy as np 
 import glob 
 
 
